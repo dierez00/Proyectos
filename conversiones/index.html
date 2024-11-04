@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Basica</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>.: Calculadora de Conversiones :.</h1>
+    </header>
+    <div id="principal">
+        <hr>
+        <form action="">
+            <label for="n1">Numero 1: </label>
+            <input type="number" placeholder="Cantidad 1(ex: 1)" id="num1" class="caja" autofocus>
+            <br>
+            <!--<label for="n2">Numero 2: </label>-->
+            <!--<input type="number" placeholder="Cantidad 2(ex: 2)" id="num2" class="caja" autofocus>-->
+            <br>
+            <label for="tipo">Tipo de operacion: </label>
+            <select name="operacion" id="operaciones" class="caja">
+                <option value="ninguno">Calcular</option>
+                <option value="pesos_dolares" selected>Pesos a Dolares</option>
+                <option value="dolares_pesos">Dolares a Pesos</option>
+                <option value="euros_pesos">Euros a Pesos</option>
+                <option value="pesos_euros">Pesos a Euros</option>
+            </select>
+        <br>
+        <button type="button" id="calcular">Calcular</button>
+        
+        </form>
+        <hr>
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>
